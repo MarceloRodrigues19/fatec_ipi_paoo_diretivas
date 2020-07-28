@@ -1,0 +1,20 @@
+<div class="container">
+  <app-curso-cadastro (cursoAdicionado)="onAdicionarCurso($event)"></app-curso-cadastro>
+
+  <div class="row">
+    <div class="col-4" *ngFor="let curso of cursos">
+      <app-curso-cartao [curso]="c"></app-curso-cartao>
+    </div>
+  </div>
+  
+  <app-pessoa-cadastro (pessoaAdicionada)="onAdicionarPessoa($event)"></app-pessoa-cadastro>
+
+  <div class="row">
+    <div class="col-4" *ngFor="let pessoa of pessoas">
+      <app-pessoa-cartao [pessoa]="p"></app-pessoa-cartao>
+    </div>
+  </div>
+
+
+  
+</div>
